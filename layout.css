@@ -1,0 +1,70 @@
+.row.no-gutters {
+    display: flex;
+}
+
+.lside, .rside {
+    height: 100vh;
+}
+
+.lside {
+    background: #FFFFFF;
+    overflow-y: auto;
+    width: 105%;
+    height: auto;
+    padding-left: 64px;
+    padding-top: 64px;
+    padding-right: 64px;
+}
+
+.rside {
+    background: #2135A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    width: 45%;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 212px;
+    height: 26px;
+    display: block;
+    margin: 35px auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Opcional: espaçamento entre os elementos */
+}
+
+.form-row .form-group:nth-child(1), /* Rua */
+.form-row .form-group:nth-child(3) { /* Cidade */
+    width: 66%; /* Largura maior para Rua e Cidade */
+}
+
+.form-row .form-group:nth-child(2), /* Número */
+.form-row .form-group:nth-child(4) { /* Estado */
+    width: 30%; /* Largura menor para Número e Estado */
+}
