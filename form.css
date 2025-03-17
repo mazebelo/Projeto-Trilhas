@@ -3,17 +3,20 @@
 }
 
 .file-upload-label {
-    border: 2px  dashed #ccc;
+    border: 2px dashed #ccc;
     color: #A8A29E;
     font-size: 16px;
-    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 30px 200px;
+    padding: 60px ; 
     cursor: pointer;
     background-color: none;
     border-radius: 5px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box; 
+    align-items: center;
+    justify-content: center; 
 }
 
 .file-upload-label:hover {
