@@ -8,15 +8,15 @@
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    padding: 60px ; 
+    padding: 60px;
     cursor: pointer;
     background-color: none;
     border-radius: 5px;
     text-align: center;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .file-upload-label:hover {
@@ -25,20 +25,21 @@
 
 .file-upload-label i,
 .file-upload-label img {
-    max-height: 48px; /*tamanho máximo ícone*/
+    max-height: 48px;
+    /*tamanho máximo ícone*/
 }
 
-.subtitle{
+.subtitle {
     padding-bottom: 16px;
 }
 
 
-.form-label{
+.form-label {
     font-size: 14px;
     color: #57534E;
 }
 
-input.form-control{
+input.form-control {
     font-size: 16px;
 }
 
@@ -69,18 +70,21 @@ button#b1 img {
 
 .form-check-label {
     margin-left: 12px;
+    display: block;
 }
 
 
-div.form-check{
+div.form-check {
     margin-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.form{
+.form {
     padding-top: 28px;
 }
 
-.radio-container{
+.radio-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(150px, 1fr));
     gap: 16px;
@@ -88,7 +92,7 @@ div.form-check{
 
 }
 
-.radio-item{
+.radio-item {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -100,7 +104,7 @@ div.form-check{
     height: 120px;
 }
 
-.radio-item img{
+.radio-item img {
     max-height: 40px;
     margin-bottom: 8px;
     align-self: center;
@@ -117,7 +121,7 @@ div.form-check{
     transform: scale(1.4);
 }
 
-.radio-item:hover{
+.radio-item:hover {
     background-color: #f0f0f0;
 }
 
@@ -126,17 +130,17 @@ div.form-check{
     accent-color: #E43A12;
 }
 
-#btn-primary{
+#btn-primary {
     background-color: #E43A12;
     border-radius: 8px;
     border-color: transparent;
     font-size: 16px;
     margin-left: 16px;
     font-weight: 500;
-    padding: 12px 24px ;
+    padding: 12px 24px;
 }
 
-#btn-secondary{
+#btn-secondary {
     background: none;
     border-radius: 8px;
     color: #E43A12;
@@ -146,7 +150,7 @@ div.form-check{
     padding: 12px 24px;
 }
 
-.mt-3{
+.mt-3 {
     display: flex;
     justify-content: right;
     padding-top: 48px;
@@ -155,24 +159,122 @@ div.form-check{
 
 /* input desativado */
 input.form-control:not(:focus):placeholder-shown {
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     border-color: #ccc;
-    color: #888; 
+    color: #888;
     opacity: 0.8;
     cursor: default;
 }
 
 /* input ativo */
-input.form-control:not(:focus):not(:placeholder-shown){
-    background-color: #fff; 
-    color: #000; 
+input.form-control:not(:focus):not(:placeholder-shown) {
+    background-color: #fff;
+    color: #000;
     opacity: 1;
     cursor: auto;
 }
 
 
 /* select ativo */
-select.form-control:not(:focus):not(:placeholder-shown){
-    color: #000; 
+select.form-control:not(:focus):not(:placeholder-shown) {
+    color: #000;
     cursor: pointer;
+}
+
+
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+
+    /*grupo radio*/
+    .radio-container {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .radio-item {
+        height: 70px;
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .radio-item img {
+        margin-bottom: 0;
+        margin-right: 10px;
+        max-height: 30px;
+    }
+
+    .radio-item span {
+        align-self: auto;
+    }
+
+    .radio-item input[type="radio"] {
+        position: static;
+        margin-right: 10px;
+        transform: scale(1.2);
+        accent-color: #000;
+    }
+
+    
+
+    /*botões*/
+    #btn-primary,
+    #btn-secondary {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .mt-3 {
+        flex-direction: column-reverse;
+        padding-top: 24px;
+        margin-bottom: 0px;
+    }
+
+
+    /*termos e condições*/
+    .form-check-label {
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: justify;
+    }
+
+    .form-check-input {
+        transform: scale(1.2);
+    }
+
+    .destaque {
+        font-size: 14px;
+    }
+
+    /*input arquivos*/
+    .file-upload-label {
+        border: 2px dashed #ccc;
+        color: #A8A29E;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        cursor: pointer;
+        background-color: none;
+        border-radius: 5px;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .file-upload-label i,
+    .file-upload-label img {
+        max-height: 32px;
+        margin-bottom: 8px;
+    }
 }
