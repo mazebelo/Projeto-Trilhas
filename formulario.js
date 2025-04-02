@@ -263,6 +263,9 @@ function meu_callback(conteudo) {
                 break;
             }
         }
+        // Disparar o evento personalizado
+        const eventoCepCompleto = new Event('cepCompleto');
+        document.getElementById('cep').dispatchEvent(eventoCepCompleto);
     } else {
         limpa_formulario_cep();
         const cepInput = document.getElementById('cep');
@@ -272,6 +275,9 @@ function meu_callback(conteudo) {
     }
 }
 
+document.getElementById('cep').addEventListener('cepCompleto', function () {
+    salvarInform();
+});
 
 //função para adicionar nome do arquivo selecionado no input type="file" - concluída
 const arquivoInput2 = document.getElementById('arquivo2');
