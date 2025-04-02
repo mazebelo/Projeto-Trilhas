@@ -73,8 +73,8 @@ function salvarInform() {
     localStorage.setItem('dadosUsuario', JSON.stringify(dadosUsuario));
     console.log('Dados Salvos:', dadosUsuario);
 
-    //recupera os dados salvos no localStorage com a chave "dadosForm", convertendo-os para objetos JS e exibindo esse objeto no console por meio do console.log
-    let dadosRecuperados = JSON.parse(localStorage.getItem('dadosForm'));
+    //recupera os dados salvos no localStorage com a chave "dadosUsuario", convertendo-os para objetos JS e exibindo esse objeto no console por meio do console.log
+    let dadosRecuperados = JSON.parse(localStorage.getItem('dadosUsuario'));
     console.log('Dados recuperados:', dadosRecuperados)
 }
 
