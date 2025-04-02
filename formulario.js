@@ -71,8 +71,6 @@ function removeError(campo) {
 //função para validar nome - concluída
 function validarNome() {
     const nomeInput = document.getElementById('nome');
-    let nome = nomeInput.value.replace(/[^a-zA-Záàâãéèêíïóôõúç\s]/g, '').replace(/\s+/g, ' ').trim();
-    nomeInput.value = nome;
     if (nome.length < 4) {
         setError(nomeInput);
         nomeInput.closest('.form-group').querySelector('.span-required').textContent = "Nome deve ter no mínimo 4 letras";
