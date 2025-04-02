@@ -71,6 +71,7 @@ function removeError(campo) {
 //função para validar nome - concluída
 const nomeInput = document.getElementById('nome');
 function validarNome() {
+    let nome = nomeInput.value;
     if (nome.length < 4) {
         setError(nomeInput);
         nomeInput.closest('.form-group').querySelector('.span-required').textContent = "Nome deve ter no mínimo 4 letras";
@@ -78,7 +79,6 @@ function validarNome() {
     }
     removeError(nomeInput);
 }
-
 
 //função para verificar e validar cpf - concluída 
 const validarCpf = (cpf) => {
