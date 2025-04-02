@@ -80,17 +80,6 @@ function validarNome() {
 }
 
 
-//função para validar data - concluída
-function validarData(dateString) {
-    const dateParts = dateString.split("/");
-    const dia = parseInt(dateParts[0]);
-    const mes = parseInt(dateParts[1]);
-    const ano = parseInt(dateParts[2]);
-    const data = new Date(ano, mes - 1, dia);
-    return data.getFullYear() === ano && data.getMonth() === mes - 1 && data.getDate() === dia;
-}
-
-
 //função para verificar e validar cpf - concluída 
 const validarCpf = (cpf) => {
     const cpfInput = document.getElementById('cpf');
