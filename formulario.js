@@ -80,6 +80,7 @@ function validarNome() {
     removeError(nomeInput);
 }
 
+
 //função para verificar e validar cpf - concluída 
 const validarCpf = (cpf) => {
     const cpfInput = document.getElementById('cpf');
