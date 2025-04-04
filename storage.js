@@ -1,7 +1,8 @@
 //comportamento padrãp do envio do formulário é impedido
 document.getElementById('formulario').addEventListener('submit', function (event) {
     event.preventDefault();
-    salvarInform(); // função para processas os dados do formulário
+    alert("Dados salvos");
+    window.location.href = "login.html"; //redireciona para a página de login
 });
 
 let dadosUsuario = {
@@ -22,6 +23,7 @@ let dadosUsuario = {
 };
 
 function salvarInform() {
+    console.trace("salvarInform chamada");
     dadosUsuario.nome = document.getElementById('nome').value; //coletando valor de nome
     dadosUsuario.dataNasc = document.getElementById('dataNascimento').value; //coletando valor da data de nascimento
     dadosUsuario.cpf = document.getElementById('cpf').value; //coletando valor do cpf
@@ -34,7 +36,6 @@ function salvarInform() {
     dadosUsuario.numero = document.getElementById('numero').value; //coletando valor do numero da casa
     dadosUsuario.cidade = document.getElementById('cidade').value; //coletando valor da cidade
     dadosUsuario.uf = document.getElementById('uf').value; //coletando valor da Unidade Federal
-
 
     //verificando se o campo de input file 1 possui algo inserido, se sim retorna a mensagem "Documento inserido" e o nome do arquivo
     let arquivoInput1 = document.getElementById('arquivo1');
@@ -68,17 +69,15 @@ function salvarInform() {
         }
     }
 
+    let usuarios = localStorage.getItem('usuarios');
+    usuarios = usuarios ? JSON.parse(usuarios) : [];
 
-    //transformando os objetos em stringis JSON em formato de texto para ser armazenado. Salvando as informações no localStorage com a chave "dadosUsuarios"
-    localStorage.setItem('dadosUsuario', JSON.stringify(dadosUsuario));
-    console.log('Dados Salvos:', dadosUsuario);
+    // Adiciona o novo usuário à lista
+    usuarios.push(dadosUsuario);
 
-    //recupera os dados salvos no localStorage com a chave "dadosUsuario", convertendo-os para objetos JS e exibindo esse objeto no console por meio do console.log
-    let dadosRecuperados = JSON.parse(localStorage.getItem('dadosUsuario'));
-    console.log('Dados recuperados:', dadosRecuperados)
+    // Salva a lista atualizada no localStorage
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    console.log('Usuário Cadastrado:', dadosUsuario);
+    console.log('Lista de Usuários:', usuarios);
 }
-
-
-
-
 
