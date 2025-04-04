@@ -1,0 +1,99 @@
+#quadro {
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 64px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#submsg {
+    color: gray;
+}
+
+#quadro a.link {
+    color: #E43A12;
+}
+
+input.form-control {
+    padding-right: 40px;
+    /* Ajuste o padding para evitar sobreposição */
+}
+
+.input-icon-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+span.span-required {
+    display: none;
+    font-size: 14px;
+    margin: 3px 0 0 1px;
+    color: #DC2626;
+
+}
+
+#btn-primary {
+    background-color: #E43A12;
+    border-radius: 8px;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.mt-3 {
+    display: flex;
+    justify-content: right;
+    box-sizing: border-box;
+}
+
+.session {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.remember-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.check-input {
+    accent-color: #E43A12;
+    transform: scale(1.4);
+}
+
+.form-check-label {
+    margin-left: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #quadro {
+        width: 90%;
+        max-width: 400px;
+        padding: 60px 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; /* Garante que a .session ocupe toda a largura */
+        justify-content: center; /* centraliza verticalmente o conteudo do quadro*/
+    }
+
+   
+}
