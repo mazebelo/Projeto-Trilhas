@@ -23,7 +23,8 @@
             <div class="lside" id="lside">
 
                 <header class="form-header"><button type="button" id="b1" aria-label="Voltar para a página anterior">
-                        <img src="css/icones/arrow-left.png" alt="">Voltar
+
+                        <img src="css/icones/arrow-left.png" alt=""><a href="login.html" class="link ">Voltar</a>
                     </button>
                     <p class="titulo">Formulário de inscrição</p>
                     <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
@@ -56,7 +57,8 @@
                         <div class="form-group input-box">
                             <label for="senha" class="form-label">Senha</label>
                             <div class="input-icon-container">
-                                <input type="password" id="senha" name="senha" placeholder="Senha" class="required form-control">
+                                <input type="password" id="senha" name="senha" placeholder="Senha"
+                                    class="required form-control">
                                 <img src="css/icones/eye-slash-fill.svg" alt="" class="password-icon" id="passwordIcon">
                             </div>
                             <span class="span-required">Digite uma senha válida (mínimo 8 caracteres)</span>
@@ -66,8 +68,9 @@
                             <label for="confirmarSenha" class="form-label">Confirmar senha</label>
                             <div class="input-icon-container">
                                 <input type="password" id="confirmarSenha" name="confirmarSenha"
-                                placeholder="Confirme sua senha" class="required form-control">
-                                <img src="css/icones/eye-slash-fill.svg" alt="" class="password-icon" id="passwordIcon2">
+                                    placeholder="Confirme sua senha" class="required form-control">
+                                <img src="css/icones/eye-slash-fill.svg" alt="" class="password-icon"
+                                    id="passwordIcon2">
                             </div>
                             <span class="span-required">As senhas devem ser iguais</span>
                         </div>
@@ -197,42 +200,43 @@
                         <form class="required radio-container" id="span-required trilha-container">
                             <div>
                                 <label class="radio-item" for="front-end">
-                                    <input type="radio" id="front-end" name="trilha" value="front-end">
+                                    <input type="radio" id="front-end" name="trilha" value=" Programação front-end">
                                     <img src="css/icones/icon-programacao-front-end.png" alt="Front-end">
                                     <span>Programação Front-end</span>
                                 </label>
                             </div>
                             <div>
                                 <label class="radio-item" for="back-end">
-                                    <input type="radio" id="back-end" name="trilha" value="back-end">
+                                    <input type="radio" id="back-end" name="trilha" value="Programação back-end">
                                     <img src="css/icones/programacao-back-end.png" alt="Back-end">
                                     <span>Programação Back-end</span>
                                 </label>
                             </div>
                             <div>
                                 <label class="radio-item" for="jogos">
-                                    <input type="radio" id="jogos" name="trilha" value="jogos">
+                                    <input type="radio" id="jogos" name="trilha" value="Programação de jogos">
                                     <img src="css/icones/prgramacao-jogos.png" alt="jogos">
                                     <span>Programação de Jogos</span>
                                 </label>
                             </div>
                             <div>
                                 <label class="radio-item" for="design">
-                                    <input type="radio" id="design" name="trilha" value="design">
+                                    <input type="radio" id="design" name="trilha" value="Design e experiência">
                                     <img src="css/icones/design.png" alt="Design">
                                     <span>Design e Experiência</span>
                                 </label>
                             </div>
                             <div>
                                 <label class="radio-item" for="dados">
-                                    <input type="radio" id="dados" name="trilha" value="dados">
+                                    <input type="radio" id="dados" name="trilha" value="Ciência de dados">
                                     <img src="css/icones/ciencia-dados.png" alt="Dados">
                                     <span>Ciência de Dados</span>
                                 </label>
                             </div>
                             <span class="span-required" id="trilha-erro">Escolha uma opção de trilha</span>
                         </from>
-                    </fieldset>
+                    </fieldset> 
+
 
                     <div class="container">
                         <div class="form-check-div">
@@ -240,7 +244,8 @@
                             <label class="form-check-label" for="termos">Declaro que li e concordo com os <span
                                     class="destaque">Termos e Condições</span> e com a <span class="destaque">Política
                                     de Privacidade</span>.</label>
-                            <span class="span-required" id="termos-erro">Você precisa aceitar os termos e condições</span>
+                            <span class="span-required" id="termos-erro">Você precisa aceitar os termos e
+                                condições</span>
                         </div>
                     </div>
 
@@ -268,7 +273,6 @@
 
     <script src="formulario.js"></script>
     <script src="storage.js"></script> 
-
 </body>
 
 </html>
