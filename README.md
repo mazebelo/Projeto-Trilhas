@@ -26,8 +26,17 @@ Para executar o projeto localmente, siga estas etapas:
 2.  Abra o arquivo `index.html` em seu navegador web de preferência.
 3.  Certifique-se de que os arquivos CSS e JavaScript estejam nos diretórios corretos (ou ajuste os caminhos no `index.html`).
 4.  Para simular o armazenamento de dados, utilize o console do navegador e inspecione o `localStorage`.
-   ![alt text](![exemplo1](https://github.com/user-attachments/assets/c379d807-8916-496c-8c1b-bfeabf34bd76)
-)
+    * Passo 01: clicar com o botão direito na tela e apertar em "Inspecionar elemento".
+    * Passo 02: navegar até a sessão "Application" e conferir no LocalStorage os dados salvos que foram inserios no formulário.
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mazebelo/Projeto-Trilhas/main/Screenshots/inspecionar.png" width="450" title="hover text">
+  <img src="https://raw.githubusercontent.com/mazebelo/Projeto-Trilhas/main/Screenshots/application.png"  width="450" alt="accessibility text">
+</p>
+
+
+
 
 ## 4. Tecnologias Utilizadas
 
