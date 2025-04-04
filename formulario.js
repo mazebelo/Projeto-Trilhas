@@ -203,7 +203,7 @@ const fileUploadLabel1 = document.querySelector('label[for="arquivo1"]');
 arquivoInput1.addEventListener('change', () => {
     if (arquivoInput1.files.length > 0) {
         fileUploadText1.textContent = arquivoInput1.files[0].name;
-        fileUploadText1.style.color = '#2135A6'; // Altera a cor do texto 
+        fileUploadText1.style.color = '#2135A6';  
         fileUploadLabel1.style.borderColor = '#2135A6';
         fileUploadLabel1.style.border = '2px solid #2135A6';
     } else {
@@ -216,6 +216,7 @@ arquivoInput1.addEventListener('change', () => {
 
 //função para validar cep e preencher campos 'Cidade' e 'UF' - concluída
 function pesquisaCep(valor) {
+    console.trace("pesquisaCep chamada com:", valor);
     let cep = valor.replace(/\D/g, '');
     const cepInput = document.getElementById('cep');
     if (cep !== "") {
@@ -243,6 +244,7 @@ function limpa_formulario_cep() {
     document.getElementById('uf').value = "";
 }
 function meu_callback(conteudo) {
+    console.trace("meu_callback chamada com:", conteudo);
     if (!("erro" in conteudo)) {
         document.getElementById('cidade').value = conteudo.localidade;
         const ufSelect = document.getElementById('uf');
@@ -253,9 +255,8 @@ function meu_callback(conteudo) {
                 break;
             }
         }
-        // Disparar o evento personalizado
-        const eventoCepCompleto = new Event('cepCompleto');
-        document.getElementById('cep').dispatchEvent(eventoCepCompleto);
+
+        salvarInform();
     } else {
         limpa_formulario_cep();
         const cepInput = document.getElementById('cep');
@@ -265,9 +266,6 @@ function meu_callback(conteudo) {
     }
 }
 
-document.getElementById('cep').addEventListener('cepCompleto', function () {
-    salvarInform();
-});
 
 //função para adicionar nome do arquivo selecionado no input type="file" - concluída
 const arquivoInput2 = document.getElementById('arquivo2');
@@ -289,7 +287,7 @@ arquivoInput2.addEventListener('change', () => {
 
 //função para validar radios - concluída
 function validarTrilha() {
-    var radios = document.getElementsByName("trilha"); // Corrigido o nome "trilhas" para "trilha"
+    var radios = document.getElementsByName("trilha"); 
     var formValid = false;
 
     for (var i = 0; i < radios.length; i++) {
@@ -300,11 +298,11 @@ function validarTrilha() {
     }
 
     if (!formValid) {
-        document.getElementById("trilha-erro").style.display = "block"; // Exibe a mensagem de erro
-        return false; // Importante retornar false para impedir o envio do formulário
+        document.getElementById("trilha-erro").style.display = "block"; 
+        return false; 
     } else {
-        document.getElementById("trilha-erro").style.display = "none"; // Oculta a mensagem de erro se a validação passar
-        return true; // Importante retornar true para permitir o envio do formulário
+        document.getElementById("trilha-erro").style.display = "none"; 
+        return true; 
     }
 }
 
@@ -320,5 +318,3 @@ function validarTermos() {
         return true;
     }
 }
-
-
