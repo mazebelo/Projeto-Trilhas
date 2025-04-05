@@ -22,10 +22,9 @@ O formulário estático existente foi um passo inicial importante, mas este proj
 
 Para executar o projeto localmente, siga estas etapas:
 
-1.  Clone o repositório para sua máquina.
-2.  Abra o arquivo `index.html` em seu navegador web de preferência.
-3.  Certifique-se de que os arquivos CSS e JavaScript estejam nos diretórios corretos (ou ajuste os caminhos no `index.html`).
-4.  Para simular o armazenamento de dados, utilize o console do navegador e inspecione o `localStorage`.
+1.  Acesse o link do Github pages do repositório: https://mazebelo.github.io/Projeto-Trilhas/.
+2.  Preencha o formulário de inscrição do Projeto Trilhas.
+3.  Para simular o armazenamento de dados, utilize o console do navegador e inspecione o `localStorage`.
     * Passo 01: clicar com o botão direito na tela e apertar em "Inspecionar elemento".
     * Passo 02: navegar até a sessão "Application" e conferir no LocalStorage os dados salvos que foram inserios no formulário.
 
