@@ -90,4 +90,3 @@ function salvarNoLocalStorage(dadosUsuario) {
     console.log('Lista de Usuários:', usuarios);
 }
 
-localStorage.clear()
