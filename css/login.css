@@ -20,7 +20,6 @@
 
 input.form-control {
     padding-right: 40px;
-    /* Ajuste o padding para evitar sobreposição */
 }
 
 .input-icon-container {
@@ -91,8 +90,8 @@ span.span-required {
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        align-items: stretch; /* Garante que a .session ocupe toda a largura */
-        justify-content: center; /* centraliza verticalmente o conteudo do quadro*/
+        align-items: stretch; 
+        justify-content: center; 
     }
 
    
