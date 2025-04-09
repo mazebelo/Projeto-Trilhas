@@ -1,4 +1,4 @@
-# Plataforma de Inscrição para o Programa Trilhas do Maranhão
+# Plataforma de Inscrição - Programa de Formação SECTI em parceria com a FAPEMA
 
 Este projeto visa modernizar o sistema de inscrição online do programa de formação em tecnologia do Governo do Maranhão, tornando-o mais acessível e eficiente para os candidatos.
 
