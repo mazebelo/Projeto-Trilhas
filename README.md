@@ -8,7 +8,7 @@ Este projeto visa modernizar o sistema de inscrição online do programa de form
     * Vídeo de Demonstração: [https://youtu.be/teYhZm4qJGs?si=qL7V8Tuhnk9cHmrs](https://youtu.be/teYhZm4qJGs?si=qL7V8Tuhnk9cHmrs)
     * Documento de Referência: [https://docs.google.com/document/d/1kkS05oCWvpUM3mV5dtcO0LakqnifJQzseZMhEuGHcws/edit?usp=sharing](https://docs.google.com/document/d/1kkS05oCWvpUM3mV5dtcO0LakqnifJQzseZMhEuGHcws/edit?usp=sharing)
 * **Processo de Inscrição e Seleção:** [https://docs.google.com/document/d/1krCP2A-fPOMOX-UsARjIUjAg7Q-JJWmui8DZWlAzl74/edit?usp=sharing](https://docs.google.com/document/d/1krCP2A-fPOMOX-UsARjIUjAg7Q-JJWmui8DZWlAzl74/edit?usp=sharing)
-
+](https://docs.google.com/document/d/1krCP2A-fPOMOX-UsARjIUjAg7Q-JJWmui8DZWlAzl74/edit?usp=sharing)
 ## 1. Visão Geral do Projeto
 
 O formulário estático existente foi um passo inicial importante, mas este projeto busca aprimorá-lo com funcionalidades dinâmicas e uma interface mais intuitiva. Ao implementar validações robustas, armazenamento local de dados e um sistema de login, criaremos uma plataforma que oferece uma experiência de inscrição mais ágil e segura para os candidatos.
